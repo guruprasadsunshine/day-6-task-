@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+
+class guruuber {
+    constructor(distance,rate,waitingtime){
+        this.distance=distance;
+        this.rate=rate;
+        this.waitingtime=waitingtime;
+    }
+setdistance(distance1){
+    this.distance=distance1
+}
+showride(){
+    return (`this distance of ride is ${this.distance} km  with a waiting period of ${this.waitingtime} mins`)
+    }
+
+
+getpriceofride(){
+
+let price = (this.rate * this.distance) + (6*this.waitingtime)
+return price 
+
+}
+
+}
+
+let ola  = new guruuber (30,15,10)
+// setdistance(150)
+console.log(ola.getpriceofride())
+ console.log(ola.showride())
+
+
+//-------------person  class-----------------//
+
+
+class person {
+    constructor(Name,state,city,Dob,study,skill,job,interest  ){
+this.Name=Name,
+this.state=state,
+this.city=city,
+this.Dob=Dob,
+this.study=study,
+this.skill=skill,
+this.job=job,
+this.interest=interest
+    }
+}
+
+
+
+const guru = new person ("guru","karnataka","bangalore","28-04-1993","photoshop","medical rep","sports","movies")
+const tejas = new person ("tejas","karnataka","chennai","24-05-1995","photoshop","graphic designer","sports","movies")
+
+console.log(guru)
+console.log(tejas)
+
+
+    </script>
+</body>
+</html>
